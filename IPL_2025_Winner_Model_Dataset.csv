@@ -1,0 +1,75 @@
+Match_ID,Date,Teams,Team1,Team2,Toss_Winner,Toss_Decision,team1_form_winrate_5,team2_form_winrate_5,venue_chase_winrate_prior,venue_score_prior,Match_Winner
+1473438,2025-03-22,Kolkata Knight Riders vs Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.8,0.4,0.5,0.0,Royal Challengers Bengaluru
+1473439,2025-03-23,Sunrisers Hyderabad vs Rajasthan Royals,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,field,0.4,0.4,0.4666666666666667,-0.06666666666666665,Sunrisers Hyderabad
+1473440,2025-03-23,Mumbai Indians vs Chennai Super Kings,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,0.4,0.4,0.5,0.0,Chennai Super Kings
+1473441,2025-03-24,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,Delhi Capitals,field,0.2,0.4,0.25,-0.5,Delhi Capitals
+1473442,2025-03-25,Punjab Kings vs Gujarat Titans,Punjab Kings,Gujarat Titans,Gujarat Titans,field,0.0,0.6,0.6153846153846154,0.23076923076923084,Punjab Kings
+1473443,2025-03-26,Rajasthan Royals vs Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,0.4,1.0,0.4,-0.19999999999999996,Kolkata Knight Riders
+1473444,2025-03-27,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,field,0.4,0.6,0.4375,-0.125,Lucknow Super Giants
+1473445,2025-03-28,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,field,0.8,0.6,0.5161290322580645,0.032258064516129004,Royal Challengers Bengaluru
+1473446,2025-03-29,Gujarat Titans vs Mumbai Indians,Gujarat Titans,Mumbai Indians,Mumbai Indians,field,0.2,0.2,0.5925925925925926,0.18518518518518512,Gujarat Titans
+1473447,2025-03-30,Sunrisers Hyderabad vs Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,bat,0.4,0.6,0.4,-0.19999999999999996,Delhi Capitals
+1473448,2025-03-30,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,field,0.2,0.4,0.5,0.0,Rajasthan Royals
+1473449,2025-03-31,Kolkata Knight Riders vs Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,0.6,0.2,0.5957446808510638,0.1914893617021276,Mumbai Indians
+1473450,2025-04-01,Lucknow Super Giants vs Punjab Kings,Lucknow Super Giants,Punjab Kings,Punjab Kings,field,0.2,0.6,0.4375,-0.125,Punjab Kings
+1473451,2025-04-02,Royal Challengers Bengaluru vs Gujarat Titans,Royal Challengers Bengaluru,Gujarat Titans,Gujarat Titans,field,0.8,0.4,0.4375,-0.125,Gujarat Titans
+1473452,2025-04-03,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,0.6,0.6,0.5263157894736842,0.05263157894736836,Kolkata Knight Riders
+1473453,2025-04-04,Lucknow Super Giants vs Mumbai Indians,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,field,0.2,0.4,0.47058823529411764,-0.05882352941176472,Lucknow Super Giants
+1473454,2025-04-05,Delhi Capitals vs Chennai Super Kings,Delhi Capitals,Chennai Super Kings,Delhi Capitals,bat,0.8,0.4,0.5,0.0,Delhi Capitals
+1473455,2025-04-05,Rajasthan Royals vs Punjab Kings,Rajasthan Royals,Punjab Kings,Punjab Kings,field,0.2,0.6,0.5714285714285714,0.1428571428571428,Rajasthan Royals
+1473457,2025-04-06,Sunrisers Hyderabad vs Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,field,0.4,0.6,0.47058823529411764,-0.05882352941176472,Gujarat Titans
+1473458,2025-04-07,Royal Challengers Bengaluru vs Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,field,0.6,0.2,0.6041666666666666,0.20833333333333326,Royal Challengers Bengaluru
+1473456,2025-04-08,Lucknow Super Giants vs Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,Kolkata Knight Riders,field,0.4,1.0,0.5,0.0,Lucknow Super Giants
+1473459,2025-04-08,Punjab Kings vs Chennai Super Kings,Punjab Kings,Chennai Super Kings,Punjab Kings,bat,0.2,0.2,0.5,0.0,Punjab Kings
+1473460,2025-04-09,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,Rajasthan Royals,field,0.4,0.2,0.5714285714285714,0.1428571428571428,Gujarat Titans
+1473461,2025-04-10,Royal Challengers Bengaluru vs Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,field,0.6,0.6,0.47058823529411764,-0.05882352941176472,Delhi Capitals
+1473462,2025-04-11,Chennai Super Kings vs Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,0.4,0.8,0.48484848484848486,-0.030303030303030276,Kolkata Knight Riders
+1473463,2025-04-12,Gujarat Titans vs Lucknow Super Giants,Gujarat Titans,Lucknow Super Giants,Lucknow Super Giants,field,0.6,0.6,0.4444444444444444,-0.11111111111111116,Lucknow Super Giants
+1473464,2025-04-12,Punjab Kings vs Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,Punjab Kings,bat,0.4,0.4,0.5,0.0,Sunrisers Hyderabad
+1473465,2025-04-13,Rajasthan Royals vs Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.4,0.6,0.5,0.0,Royal Challengers Bengaluru
+1473466,2025-04-13,Mumbai Indians vs Delhi Capitals,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,0.4,0.6,0.4444444444444444,-0.11111111111111116,Mumbai Indians
+1473467,2025-04-14,Lucknow Super Giants vs Chennai Super Kings,Lucknow Super Giants,Chennai Super Kings,Chennai Super Kings,field,0.6,0.2,0.47368421052631576,-0.052631578947368474,Chennai Super Kings
+1473468,2025-04-15,Punjab Kings vs Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,0.4,0.8,0.4444444444444444,-0.11111111111111116,Punjab Kings
+1473469,2025-04-16,Delhi Capitals vs Rajasthan Royals,Delhi Capitals,Rajasthan Royals,Rajasthan Royals,field,0.8,0.2,0.42105263157894735,-0.1578947368421053,Draw/No Result
+1473470,2025-04-17,Sunrisers Hyderabad vs Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,field,0.2,0.2,0.5918367346938775,0.18367346938775508,Mumbai Indians
+1473471,2025-04-18,Royal Challengers Bengaluru vs Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,field,0.4,0.4,0.5,0.0,Punjab Kings
+1473472,2025-04-19,Delhi Capitals vs Gujarat Titans,Delhi Capitals,Gujarat Titans,Gujarat Titans,field,0.6,0.6,0.5517241379310345,0.10344827586206895,Gujarat Titans
+1473473,2025-04-19,Lucknow Super Giants vs Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,Lucknow Super Giants,bat,0.4,0.2,0.5384615384615384,0.07692307692307687,Lucknow Super Giants
+1473474,2025-04-20,Punjab Kings vs Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.6,0.8,0.4,-0.19999999999999996,Royal Challengers Bengaluru
+1473475,2025-04-20,Chennai Super Kings vs Mumbai Indians,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,0.4,0.4,0.6,0.19999999999999996,Mumbai Indians
+1473476,2025-04-21,Gujarat Titans vs Kolkata Knight Riders,Gujarat Titans,Kolkata Knight Riders,Kolkata Knight Riders,field,0.6,0.6,0.47619047619047616,-0.04761904761904767,Gujarat Titans
+1473477,2025-04-22,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,Delhi Capitals,field,0.6,0.6,0.5,0.0,Delhi Capitals
+1473478,2025-04-23,Sunrisers Hyderabad vs Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,field,0.2,0.6,0.5263157894736842,0.05263157894736836,Mumbai Indians
+1473479,2025-04-24,Royal Challengers Bengaluru vs Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,field,0.4,0.0,0.5263157894736842,0.05263157894736836,Royal Challengers Bengaluru
+1473480,2025-04-25,Chennai Super Kings vs Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,field,0.4,0.6,0.5,0.0,Sunrisers Hyderabad
+1473481,2025-04-26,Punjab Kings vs Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,Punjab Kings,bat,0.6,0.4,0.45454545454545453,-0.09090909090909094,Draw/No Result
+1473482,2025-04-27,Mumbai Indians vs Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,Lucknow Super Giants,field,0.4,0.6,0.6078431372549019,0.21568627450980382,Mumbai Indians
+1473483,2025-04-27,Delhi Capitals vs Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.6,1.0,0.4,-0.19999999999999996,Royal Challengers Bengaluru
+1473484,2025-04-28,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,Rajasthan Royals,field,0.8,0.0,0.5,0.0,Rajasthan Royals
+1473485,2025-04-29,Kolkata Knight Riders vs Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,field,0.6,0.8,0.42857142857142855,-0.1428571428571429,Kolkata Knight Riders
+1473486,2025-04-30,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,Punjab Kings,field,0.2,0.6,0.5142857142857142,0.02857142857142847,Punjab Kings
+1473487,2025-05-01,Mumbai Indians vs Rajasthan Royals,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,0.4,0.2,0.5333333333333333,0.06666666666666665,Mumbai Indians
+1473488,2025-05-02,Gujarat Titans vs Sunrisers Hyderabad,Gujarat Titans,Sunrisers Hyderabad,Sunrisers Hyderabad,field,0.6,0.8,0.5666666666666667,0.1333333333333333,Gujarat Titans
+1473489,2025-05-03,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,field,0.4,0.2,0.5,0.0,Royal Challengers Bengaluru
+1473490,2025-05-04,Kolkata Knight Riders vs Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,bat,0.6,0.2,0.43478260869565216,-0.13043478260869568,Kolkata Knight Riders
+1473491,2025-05-04,Punjab Kings vs Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,Lucknow Super Giants,field,0.4,0.4,0.3333333333333333,-0.33333333333333337,Punjab Kings
+1473492,2025-05-05,Delhi Capitals vs Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,field,0.4,0.6,0.55,0.10000000000000009,Draw/No Result
+1473493,2025-05-06,Mumbai Indians vs Gujarat Titans,Mumbai Indians,Gujarat Titans,Gujarat Titans,field,0.6,0.6,0.5961538461538461,0.1923076923076923,Gujarat Titans
+1473494,2025-05-07,Kolkata Knight Riders vs Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,0.6,0.2,0.4166666666666667,-0.16666666666666663,Chennai Super Kings
+1473495,2025-05-08,Punjab Kings vs Delhi Capitals,Punjab Kings,Delhi Capitals,Punjab Kings,bat,0.4,0.6,0.2857142857142857,-0.4285714285714286,Draw/No Result
+1473497,2025-05-18,Punjab Kings vs Rajasthan Royals,Punjab Kings,Rajasthan Royals,Punjab Kings,bat,0.4,0.2,0.5,0.0,Punjab Kings
+1473498,2025-05-18,Delhi Capitals vs Gujarat Titans,Delhi Capitals,Gujarat Titans,Gujarat Titans,field,0.2,0.8,0.4090909090909091,-0.18181818181818177,Gujarat Titans
+1473499,2025-05-19,Lucknow Super Giants vs Sunrisers Hyderabad,Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,field,0.6,0.4,0.5238095238095238,0.04761904761904767,Sunrisers Hyderabad
+1473500,2025-05-20,Chennai Super Kings vs Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,0.2,0.2,0.43478260869565216,-0.13043478260869568,Rajasthan Royals
+1473501,2025-05-21,Mumbai Indians vs Delhi Capitals,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,0.6,0.4,0.6037735849056604,0.2075471698113207,Mumbai Indians
+1473502,2025-05-22,Lucknow Super Giants vs Gujarat Titans,Lucknow Super Giants,Gujarat Titans,Gujarat Titans,field,0.4,1.0,0.5483870967741935,0.09677419354838701,Lucknow Super Giants
+1473503,2025-05-23,Sunrisers Hyderabad vs Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.0,1.0,0.5454545454545454,0.09090909090909083,Sunrisers Hyderabad
+1485779,2025-05-24,Punjab Kings vs Delhi Capitals,Punjab Kings,Delhi Capitals,Delhi Capitals,field,0.4,0.2,0.47058823529411764,-0.05882352941176472,Delhi Capitals
+1473504,2025-05-25,Chennai Super Kings vs Gujarat Titans,Chennai Super Kings,Gujarat Titans,Chennai Super Kings,bat,0.0,0.8,0.53125,0.0625,Chennai Super Kings
+1473505,2025-05-25,Sunrisers Hyderabad vs Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,bat,0.2,0.2,0.4583333333333333,-0.08333333333333337,Sunrisers Hyderabad
+1473506,2025-05-26,Mumbai Indians vs Punjab Kings,Mumbai Indians,Punjab Kings,Punjab Kings,field,0.8,0.8,0.5,0.0,Punjab Kings
+1473507,2025-05-27,Lucknow Super Giants vs Royal Challengers Bengaluru,Lucknow Super Giants,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.4,0.8,0.5217391304347826,0.04347826086956519,Royal Challengers Bengaluru
+1473508,2025-05-29,Punjab Kings vs Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,field,0.4,0.8,0.45454545454545453,-0.09090909090909094,Royal Challengers Bengaluru
+1473509,2025-05-30,Mumbai Indians vs Gujarat Titans,Mumbai Indians,Gujarat Titans,Mumbai Indians,bat,0.6,0.6,0.5,0.0,Mumbai Indians
+1473510,2025-06-01,Mumbai Indians vs Punjab Kings,Mumbai Indians,Punjab Kings,Punjab Kings,field,0.6,0.8,0.5151515151515151,0.030303030303030276,Punjab Kings
+1473511,2025-06-03,Royal Challengers Bengaluru vs Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,field,0.6,0.8,0.5294117647058824,0.05882352941176472,Royal Challengers Bengaluru
