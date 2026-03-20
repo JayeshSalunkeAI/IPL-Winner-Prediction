@@ -1,0 +1,12 @@
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+xgboost==3.2.0
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+streamlit==1.55.0
+fastapi==0.135.1
+uvicorn==0.42.0
+jupyterlab==4.5.3
+ipykernel==7.2.0
