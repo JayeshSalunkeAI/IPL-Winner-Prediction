@@ -10,3 +10,6 @@ fastapi==0.135.1
 uvicorn==0.42.0
 jupyterlab==4.5.3
 ipykernel==7.2.0
+tqdm==4.67.3
+PyYAML==6.0.3
+tqdm==4.67.3
