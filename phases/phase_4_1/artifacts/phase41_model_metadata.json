@@ -1,6 +1,6 @@
 {
   "phase": "4.1",
-  "train_file": "/home/vectone/MyProjects/IPL-Winner-Prediction/phases/phase_4/results/phase4_dataset.csv",
+  "train_file": "../phase_4/results/phase4_dataset.csv",
   "train_size": 907,
   "test_size": 70,
   "test_year": 2025,
@@ -126,7 +126,7 @@
       "test_balanced_accuracy": 0.563989898989899,
       "top2_accuracy": 1.0,
       "top3_accuracy": 1.0,
-      "calibration_ece": 0.2831929796365074,
+      "calibration_ece": 0.28319297963650736,
       "fit_gap_weighted_f1": 0.19984991790896123,
       "generalization_score": 0.5457443021324935,
       "best_cv_accuracy": 0.5479388015299617

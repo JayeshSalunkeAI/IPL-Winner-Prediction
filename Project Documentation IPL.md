@@ -5,11 +5,11 @@
 This repository predicts IPL match winners from pre-match data.
 The project evolved through phased improvements in features, regularization, model selection, and deployment readiness.
 
-This document reflects the cleaned phase-based structure and latest validated runs.
+This document reflects the  phase-based structure and latest validated runs.
 
 ---
 
-## 2) Professional Repository Structure
+## 2) Repository Structure
 
 ```text
 data/
@@ -191,11 +191,4 @@ Final API for deployment:
 
 ---
 
-## 6) Notes for Next Implementation Stage
-
-Planned next stage is an automated pre-match prediction workflow using external match data APIs and email delivery.
-The current structure supports that path cleanly by:
-- isolating training and artifacts per phase,
-- keeping one final serving API,
-- centralizing raw data inputs under `data/raw/`.
 
