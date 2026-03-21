@@ -1,0 +1,135 @@
+{
+  "train_file": "IPL_Winner_Model_Dataset_With_Players.csv",
+  "train_size": 924,
+  "test_size": 74,
+  "test_year": 2025,
+  "feature_count": 39,
+  "feature_columns": [
+    "Team1",
+    "Team2",
+    "Toss_Winner",
+    "Toss_Decision",
+    "team1_form_winrate_5",
+    "team2_form_winrate_5",
+    "venue_chase_winrate_prior",
+    "venue_score_prior",
+    "Team1_Players",
+    "Team2_Players",
+    "team1_player_elo_avg_prior",
+    "team2_player_elo_avg_prior",
+    "team1_player_elo_max_prior",
+    "team2_player_elo_max_prior",
+    "team1_player_elo_min_prior",
+    "team2_player_elo_min_prior",
+    "player_elo_gap_prior",
+    "Team1_Player_1",
+    "Team1_Player_2",
+    "Team1_Player_3",
+    "Team1_Player_4",
+    "Team1_Player_5",
+    "Team1_Player_6",
+    "Team1_Player_7",
+    "Team1_Player_8",
+    "Team1_Player_9",
+    "Team1_Player_10",
+    "Team1_Player_11",
+    "Team2_Player_1",
+    "Team2_Player_2",
+    "Team2_Player_3",
+    "Team2_Player_4",
+    "Team2_Player_5",
+    "Team2_Player_6",
+    "Team2_Player_7",
+    "Team2_Player_8",
+    "Team2_Player_9",
+    "Team2_Player_10",
+    "Team2_Player_11"
+  ],
+  "models_evaluated": [
+    "random_forest",
+    "xgboost",
+    "logistic_regression"
+  ],
+  "model_metrics": {
+    "xgboost": {
+      "train_accuracy": 0.9989177489177489,
+      "test_accuracy": 0.4864864864864865,
+      "train_balanced_accuracy": 0.9950980392156863,
+      "test_balanced_accuracy": 0.45918273645546376,
+      "train_f1_weighted": 0.9989041842920948,
+      "test_f1_weighted": 0.48469458469458465,
+      "test_f1_macro": 0.4321345321345321,
+      "test_precision_weighted": 0.5248283998283998,
+      "test_recall_weighted": 0.4864864864864865,
+      "fit_gap_weighted_f1": 0.5142095995975102,
+      "best_cv_weighted_f1": 0.49879366768479433
+    },
+    "random_forest": {
+      "train_accuracy": 0.7402597402597403,
+      "test_accuracy": 0.5135135135135135,
+      "train_balanced_accuracy": 0.8045993771584867,
+      "test_balanced_accuracy": 0.5069788797061524,
+      "train_f1_weighted": 0.7320358697423173,
+      "test_f1_weighted": 0.48820434055997397,
+      "test_f1_macro": 0.4648397598097178,
+      "test_precision_weighted": 0.5191977691977693,
+      "test_recall_weighted": 0.5135135135135135,
+      "fit_gap_weighted_f1": 0.2438315291823433,
+      "best_cv_weighted_f1": 0.5126749614230485
+    },
+    "logistic_regression": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.4189189189189189,
+      "train_balanced_accuracy": 1.0,
+      "test_balanced_accuracy": 0.4473829201101927,
+      "train_f1_weighted": 1.0,
+      "test_f1_weighted": 0.3939988878069373,
+      "test_f1_macro": 0.38252528345407605,
+      "test_precision_weighted": 0.42441094941094937,
+      "test_recall_weighted": 0.4189189189189189,
+      "fit_gap_weighted_f1": 0.6060011121930626,
+      "best_cv_weighted_f1": 0.49554736224572427
+    }
+  },
+  "best_model": "random_forest",
+  "best_model_params": {
+    "model__n_estimators": 300,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 2,
+    "model__max_features": "sqrt",
+    "model__max_depth": 12
+  },
+  "best_model_test_metrics": {
+    "train_accuracy": 0.7402597402597403,
+    "test_accuracy": 0.5135135135135135,
+    "train_balanced_accuracy": 0.8045993771584867,
+    "test_balanced_accuracy": 0.5069788797061524,
+    "train_f1_weighted": 0.7320358697423173,
+    "test_f1_weighted": 0.48820434055997397,
+    "test_f1_macro": 0.4648397598097178,
+    "test_precision_weighted": 0.5191977691977693,
+    "test_recall_weighted": 0.5135135135135135,
+    "fit_gap_weighted_f1": 0.2438315291823433,
+    "best_cv_weighted_f1": 0.5126749614230485
+  },
+  "fit_diagnostics": {
+    "random_forest": {
+      "status": "overfitting_risk",
+      "fit_gap_weighted_f1": 0.2438,
+      "train_f1_weighted": 0.732,
+      "test_f1_weighted": 0.4882
+    },
+    "xgboost": {
+      "status": "overfitting_risk",
+      "fit_gap_weighted_f1": 0.5142,
+      "train_f1_weighted": 0.9989,
+      "test_f1_weighted": 0.4847
+    },
+    "logistic_regression": {
+      "status": "overfitting_risk",
+      "fit_gap_weighted_f1": 0.606,
+      "train_f1_weighted": 1.0,
+      "test_f1_weighted": 0.394
+    }
+  }
+}
