@@ -1,0 +1,110 @@
+{
+  "train_years": [
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "test_years": [
+    2025
+  ],
+  "drift_report": {
+    "numeric_drift": {
+      "team1_form_winrate_5": {
+        "train_mean": 0.4994,
+        "test_mean": 0.5386,
+        "mean_shift_z": 0.1778
+      },
+      "team2_form_winrate_5": {
+        "train_mean": 0.5028,
+        "test_mean": 0.4686,
+        "mean_shift_z": -0.1534
+      },
+      "venue_chase_winrate_prior": {
+        "train_mean": 0.5166,
+        "test_mean": 0.499,
+        "mean_shift_z": -0.1625
+      },
+      "venue_score_prior": {
+        "train_mean": 0.0331,
+        "test_mean": -0.0021,
+        "mean_shift_z": -0.1625
+      },
+      "h2h_team1_winrate_prior": {
+        "train_mean": 0.4863,
+        "test_mean": 0.4855,
+        "mean_shift_z": -0.0034
+      },
+      "team1_recent_runs_for_5": {
+        "train_mean": 160.3553,
+        "test_mean": 176.58,
+        "mean_shift_z": 0.9089
+      },
+      "team2_recent_runs_for_5": {
+        "train_mean": 160.4266,
+        "test_mean": 176.2743,
+        "mean_shift_z": 0.9431
+      },
+      "team1_recent_runs_against_5": {
+        "train_mean": 160.9149,
+        "test_mean": 174.5914,
+        "mean_shift_z": 0.7739
+      },
+      "team2_recent_runs_against_5": {
+        "train_mean": 159.7902,
+        "test_mean": 177.0629,
+        "mean_shift_z": 1.0148
+      },
+      "team1_player_elo_avg_prior": {
+        "train_mean": 1008.8868,
+        "test_mean": 1014.4808,
+        "mean_shift_z": 0.1949
+      },
+      "team2_player_elo_avg_prior": {
+        "train_mean": 1010.4054,
+        "test_mean": 1010.1886,
+        "mean_shift_z": -0.0075
+      }
+    },
+    "lineup_drift": {
+      "overall_unseen_player_rate": 0.1039,
+      "per_player_slot_unseen_rate": {
+        "Team1_Player_1": 0.5286,
+        "Team1_Player_2": 0.2714,
+        "Team1_Player_3": 0.0714,
+        "Team1_Player_4": 0.1143,
+        "Team1_Player_5": 0.1,
+        "Team1_Player_6": 0.0857,
+        "Team1_Player_7": 0.1,
+        "Team1_Player_8": 0.1286,
+        "Team1_Player_9": 0.1286,
+        "Team1_Player_10": 0.1,
+        "Team1_Player_11": 0.1571,
+        "Team2_Player_1": 0.1714,
+        "Team2_Player_2": 0.2286,
+        "Team2_Player_3": 0.1429,
+        "Team2_Player_4": 0.0857,
+        "Team2_Player_5": 0.0429,
+        "Team2_Player_6": 0.0714,
+        "Team2_Player_7": 0.0857,
+        "Team2_Player_8": 0.1,
+        "Team2_Player_9": 0.1,
+        "Team2_Player_10": 0.0286,
+        "Team2_Player_11": 0.0714
+      }
+    }
+  }
+}

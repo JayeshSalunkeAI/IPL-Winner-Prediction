@@ -143,8 +143,11 @@ def build_phase4_dataset(yaml_dir: Path, output_csv: Path, player_slots: int = 1
     yaml_paths = sorted(yaml_dir.glob("*.yaml"), key=lambda p: (p.stem.isdigit(), p.stem))
 
     for path in yaml_paths:
-        with path.open("r", encoding="utf-8") as f:
-            match = yaml.safe_load(f) or {}
+        try:
+            with path.open("r", encoding="utf-8") as f:
+                match = yaml.safe_load(f) or {}
+        except (yaml.YAMLError, Exception):
+            continue  # Skip corrupted YAML files
 
         info = match.get("info") or {}
         if info.get("competition") != "IPL":

@@ -1,0 +1,96 @@
+{
+  "matches": [
+    {
+      "status": "upcoming",
+      "pre_match": {
+        "match_id": "IPL2025-001",
+        "date": "2025-03-22",
+        "venue": "MA Chidambaram Stadium, Chennai",
+        "team1": "Chennai Super Kings",
+        "team2": "Royal Challengers Bengaluru",
+        "toss_winner": "Chennai Super Kings",
+        "toss_decision": "field",
+        "team1_players": [
+          "Ruturaj Gaikwad",
+          "Devon Conway",
+          "Ajinkya Rahane",
+          "Ravindra Jadeja",
+          "Moeen Ali",
+          "MS Dhoni",
+          "Shivam Dube",
+          "Deepak Chahar",
+          "Maheesh Theekshana",
+          "Tushar Deshpande",
+          "Matheesha Pathirana"
+        ],
+        "team2_players": [
+          "Faf du Plessis",
+          "Virat Kohli",
+          "Rajat Patidar",
+          "Glenn Maxwell",
+          "Cameron Green",
+          "Dinesh Karthik",
+          "Mahipal Lomror",
+          "Mohammed Siraj",
+          "Reece Topley",
+          "Karn Sharma",
+          "Yash Dayal"
+        ]
+      }
+    },
+    {
+      "status": "completed",
+      "pre_match": {
+        "match_id": "IPL2025-002",
+        "date": "2025-03-23",
+        "venue": "Wankhede Stadium, Mumbai",
+        "team1": "Mumbai Indians",
+        "team2": "Delhi Capitals",
+        "toss_winner": "Delhi Capitals",
+        "toss_decision": "field",
+        "team1_players": [
+          "Rohit Sharma",
+          "Ishan Kishan",
+          "Suryakumar Yadav",
+          "Tilak Varma",
+          "Hardik Pandya",
+          "Tim David",
+          "Romario Shepherd",
+          "Jasprit Bumrah",
+          "Gerald Coetzee",
+          "Piyush Chawla",
+          "Akash Madhwal"
+        ],
+        "team2_players": [
+          "David Warner",
+          "Prithvi Shaw",
+          "Mitchell Marsh",
+          "Rishabh Pant",
+          "Tristan Stubbs",
+          "Axar Patel",
+          "Lalit Yadav",
+          "Kuldeep Yadav",
+          "Anrich Nortje",
+          "Mukesh Kumar",
+          "Khaleel Ahmed"
+        ]
+      },
+      "post_match": {
+        "match_id": "IPL2025-002",
+        "actual_winner": "Delhi Capitals",
+        "team1_runs": 178,
+        "team2_runs": 181,
+        "team1_wkts_lost": 7,
+        "team2_wkts_lost": 5,
+        "team1_balls": 120,
+        "team2_balls": 117,
+        "team1_powerplay_runs": 52,
+        "team2_powerplay_runs": 48,
+        "team1_death_runs": 56,
+        "team2_death_runs": 61,
+        "batting_first": "Mumbai Indians",
+        "batting_second": "Delhi Capitals"
+      }
+    }
+  ]
+}

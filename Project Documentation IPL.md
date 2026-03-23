@@ -5,7 +5,7 @@
 This repository predicts IPL match winners from pre-match data.
 The project evolved through phased improvements in features, regularization, model selection, and deployment readiness.
 
-This document reflects the  phase-based structure and latest validated runs.
+This document reflects the phase-based structure and latest validated runs.
 
 ---
 
@@ -65,6 +65,37 @@ phases/
     Phase4_1_MLPipeline.ipynb
     results/
     artifacts/
+
+  phase_5/
+    phase5_train_pipeline.py
+    phase5_transforms.py
+    Phase5_MLPipeline.ipynb
+    results/
+    artifacts/
+
+  phase_5_1/
+    phase51_extract_dataset.py
+    phase51_train_pipeline.py
+    phase51_transforms.py
+    Phase5_1_MLPipeline.ipynb
+    results/
+    artifacts/
+
+live_system/
+  ipl_live_predictor/
+    data/
+      dummy_matches.json
+    src/
+      config.py
+      data_provider.py
+      model_runtime.py
+      state_engine.py
+      storage.py
+      engine.py
+      main.py
+    state/
+      live_state.db
+    README.md
 ```
 
 Cleanup actions completed:
@@ -72,6 +103,7 @@ Cleanup actions completed:
 - Moved datasets and YAML corpus into `data/raw/`.
 - Removed unnecessary legacy FastAPI apps from earlier phases.
 - Kept only the final deployment API in `phases/phase_4_1/`.
+- Added separate live automation system in `live_system/ipl_live_predictor/`.
 
 ---
 
@@ -161,21 +193,89 @@ Current location:
 - Results: `phases/phase_4_1/results/`
 - Artifacts: `phases/phase_4_1/artifacts/`
 
+## Phase 5
+
+Goal:
+- Improve raw predictive performance with stronger ensemble candidates.
+
+What was improved:
+- Added LightGBM, CatBoost, and stacking variants.
+- Added faster search strategy and overfit-aware model selection support.
+- Preserved reports and artifacts in the same style as previous phases.
+
+Current location:
+- Training script: `phases/phase_5/phase5_train_pipeline.py`
+- Notebook: `phases/phase_5/Phase5_MLPipeline.ipynb`
+- Results: `phases/phase_5/results/`
+- Artifacts: `phases/phase_5/artifacts/`
+
+## Phase 5.1
+
+Goal:
+- Improve 2025 generalization with recency-aware signals and season-weighted training.
+
+What was improved:
+- Added season-weighted training (higher weights for 2022 to 2024).
+- Added new extracted priors:
+  - Recent XI continuity.
+  - Player availability/injury proxy.
+  - Toss-decision x venue interaction priors.
+  - Venue phase splits (powerplay/death, first/second innings).
+- Added seeded stacking ensemble (probability averaging over multiple seeds).
+- Added two-stage optimization:
+  - Fast search on stacking, CatBoost, XGBoost.
+  - Full search on top-2 candidates from fast stage.
+
+Current location:
+- Dataset extraction: `phases/phase_5_1/phase51_extract_dataset.py`
+- Training script: `phases/phase_5_1/phase51_train_pipeline.py`
+- Notebook: `phases/phase_5_1/Phase5_1_MLPipeline.ipynb`
+- Results: `phases/phase_5_1/results/`
+- Artifacts: `phases/phase_5_1/artifacts/`
+
+## Live Predictor System
+
+Goal:
+- Run automated match-by-match prediction and update priors through the season.
+
+What it does:
+- Ingests feed payload (dummy feed now; API field left empty).
+- Predicts pre-match winner with confidence and stores history.
+- Finalizes completed matches and updates rolling state for next matches.
+- Persists state in SQLite for fast retrieval.
+
+State updates covered:
+- Team form and rolling scoring/bowling rates.
+- Player ELO.
+- Venue priors and venue-team priors.
+- Head-to-head priors.
+- Toss-decision x venue priors.
+- Lineup continuity history.
+
+Current location:
+- `live_system/ipl_live_predictor/`
+
 ---
 
-## 4) Latest Metrics (Phase 4.1, 2025 Holdout)
+## 4) Latest Metrics (2025 Holdout)
 
-Source:
-- `phases/phase_4_1/results/phase41_model_comparison_metrics.csv`
+Phase 4.1:
+- Best raw accuracy (legacy): around `0.5857`
 
-Models:
-- `extra_trees_gen`: accuracy `0.5857`, weighted F1 `0.5791`, fit gap `0.1998`
-- `xgb_gen`: accuracy `0.5571`, weighted F1 `0.4910`, fit gap `-0.0106`
-- `rf_gen`: accuracy `0.5571`, weighted F1 `0.5421`, fit gap `0.1328`
+Phase 5:
+- Best model: `stacking_gen`
+- Test accuracy: `0.5857`
+- Weighted F1: `0.5852`
+- Fit gap (weighted F1): `0.1850`
 
-Selection summary:
-- Best raw accuracy: `extra_trees_gen`
-- Best deployable model by generalization rule: `xgb_gen`
+Phase 5.1:
+- Best model run: `catboost_gen_full`
+- Test accuracy: `0.5286`
+- Weighted F1: `0.5062`
+- Fit gap (weighted F1): `0.1645`
+
+Current practical deployment choice:
+- Keep Phase 5 best model for predictions until Phase 5.1 surpasses it.
 
 ---
 
@@ -185,9 +285,16 @@ Validated in the cleaned structure:
 - Phase notebooks run with updated local paths.
 - Phase 4.1 API smoke-tested with sample payload.
 - Scripts updated to use structure-safe default paths rooted at project root.
+- Live predictor dummy-flow tested end-to-end:
+  - Predictions written with confidence.
+  - Completed match finalized.
+  - SQLite state tables updated (ELO, team history, venue priors, h2h).
 
 Final API for deployment:
 - `phases/phase_4_1/phase41_fastapi_app.py`
+
+Live automation entrypoint:
+- `live_system/ipl_live_predictor/src/main.py`
 
 ---
 

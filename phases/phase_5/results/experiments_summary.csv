@@ -1,0 +1,10 @@
+RUNNING mf10_mc90_cv4_fast
+mf10_mc90_cv4_fast,xgb_gen,0.542857,0.478940,0.022607,0.537205
+RUNNING mf12_mc90_cv4_fast
+mf12_mc90_cv4_fast,xgb_gen,0.514286,0.444684,0.056346,0.500199
+RUNNING mf8_mc70_cv4_fast
+mf8_mc70_cv4_fast,xgb_gen,0.514286,0.445386,0.057968,0.499794
+RUNNING mf14_mc70_cv4_fast
+mf14_mc70_cv4_fast,xgb_gen,0.514286,0.444684,0.060660,0.499121
+RUNNING mf12_mc70_cv5_full
+mf12_mc70_cv5_full,stacking_gen,0.571429,0.568173,0.174800,0.527729

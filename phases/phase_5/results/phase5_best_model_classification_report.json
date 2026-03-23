@@ -1,0 +1,81 @@
+{
+  "Chennai Super Kings": {
+    "precision": 0.42857142857142855,
+    "recall": 0.75,
+    "f1-score": 0.5454545454545454,
+    "support": 4.0
+  },
+  "Delhi Capitals": {
+    "precision": 1.0,
+    "recall": 0.16666666666666666,
+    "f1-score": 0.2857142857142857,
+    "support": 6.0
+  },
+  "Gujarat Titans": {
+    "precision": 0.8333333333333334,
+    "recall": 0.5555555555555556,
+    "f1-score": 0.6666666666666666,
+    "support": 9.0
+  },
+  "Kolkata Knight Riders": {
+    "precision": 0.45454545454545453,
+    "recall": 1.0,
+    "f1-score": 0.625,
+    "support": 5.0
+  },
+  "Lucknow Super Giants": {
+    "precision": 0.4,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.36363636363636365,
+    "support": 6.0
+  },
+  "Mumbai Indians": {
+    "precision": 0.8333333333333334,
+    "recall": 0.5555555555555556,
+    "f1-score": 0.6666666666666666,
+    "support": 9.0
+  },
+  "Punjab Kings": {
+    "precision": 0.7,
+    "recall": 0.7,
+    "f1-score": 0.7,
+    "support": 10.0
+  },
+  "Rajasthan Royals": {
+    "precision": 0.2857142857142857,
+    "recall": 0.5,
+    "f1-score": 0.36363636363636365,
+    "support": 4.0
+  },
+  "Rising Pune Supergiant": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 0.0
+  },
+  "Royal Challengers Bengaluru": {
+    "precision": 0.875,
+    "recall": 0.6363636363636364,
+    "f1-score": 0.7368421052631579,
+    "support": 11.0
+  },
+  "Sunrisers Hyderabad": {
+    "precision": 0.4444444444444444,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5333333333333333,
+    "support": 6.0
+  },
+  "accuracy": 0.5857142857142857,
+  "macro avg": {
+    "precision": 0.5686311163583891,
+    "recall": 0.5331037649219468,
+    "f1-score": 0.4988136663973984,
+    "support": 70.0
+  },
+  "weighted avg": {
+    "precision": 0.6831648113790971,
+    "recall": 0.5857142857142857,
+    "f1-score": 0.5851818670051753,
+    "support": 70.0
+  }
+}
