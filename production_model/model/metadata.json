@@ -1,0 +1,55 @@
+{
+    "validation_accuracy": 0.6875,
+    "roc_auc": 0.692156862745098,
+    "features": [
+        "team1_form_winrate_5",
+        "team2_form_winrate_5",
+        "venue_score_prior",
+        "venue_chase_winrate_prior",
+        "toss_advantage",
+        "is_high_dew",
+        "t1_bat_avg",
+        "t1_bat_sr",
+        "t1_bowl_eco",
+        "t1_bowl_sr",
+        "t2_bat_avg",
+        "t2_bat_sr",
+        "t2_bowl_eco",
+        "t2_bowl_sr",
+        "pitch_type",
+        "bounce_and_carry",
+        "toss_winner",
+        "toss_decision",
+        "team1",
+        "team2",
+        "stadium"
+    ],
+    "cat_cols": [
+        "pitch_type",
+        "bounce_and_carry",
+        "toss_winner",
+        "toss_decision",
+        "team1",
+        "team2",
+        "stadium"
+    ],
+    "params": {
+        "iterations": 800,
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 5.0,
+        "loss_function": "Logloss",
+        "cat_features": [
+            "pitch_type",
+            "bounce_and_carry",
+            "toss_winner",
+            "toss_decision",
+            "team1",
+            "team2",
+            "stadium"
+        ],
+        "verbose": 0,
+        "random_seed": 42
+    },
+    "description": "Production CatBoost Model trained on 100% of post-2020 data."
+}

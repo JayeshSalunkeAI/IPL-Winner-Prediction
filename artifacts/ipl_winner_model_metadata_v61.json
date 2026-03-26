@@ -1,0 +1,45 @@
+{
+    "features": [
+        "team1_form_winrate_5",
+        "team2_form_winrate_5",
+        "venue_score_prior",
+        "venue_chase_winrate_prior",
+        "toss_advantage",
+        "is_high_dew",
+        "t1_bat_avg",
+        "t1_bat_sr",
+        "t1_bowl_eco",
+        "t1_bowl_sr",
+        "t2_bat_avg",
+        "t2_bat_sr",
+        "t2_bowl_eco",
+        "t2_bowl_sr",
+        "pitch_type",
+        "bounce_and_carry",
+        "toss_winner",
+        "toss_decision",
+        "team1",
+        "team2",
+        "stadium"
+    ],
+    "cat_cols": [
+        "pitch_type",
+        "bounce_and_carry",
+        "toss_winner",
+        "toss_decision",
+        "team1",
+        "team2",
+        "stadium"
+    ],
+    "metrics": {
+        "accuracy": 0.765625
+    },
+    "params": {
+        "iterations": 855,
+        "depth": 9,
+        "learning_rate": 0.020515619929819977,
+        "l2_leaf_reg": 8.26036262700836
+    },
+    "model_type": "catboost",
+    "description": "Phase 6.1: Recent Data (2020+) + Granular Player Vectors + Env Data"
+}

@@ -1,0 +1,345 @@
+match_id,stadium,pitch_type,grass_cover,moisture,dew_prediction,bounce_and_carry
+1216492,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216493,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216494,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216495,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216496,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216497,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216498,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216499,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216500,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216501,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216502,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216503,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216504,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216505,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216506,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216507,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216508,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216509,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216510,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216511,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216512,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216513,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216514,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216515,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216516,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216517,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216518,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216519,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216520,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216521,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216522,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216523,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216524,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216525,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216526,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216527,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216528,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216529,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216530,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216531,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216532,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216533,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216534,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216535,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216536,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216537,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216538,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216539,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216540,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1216541,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216542,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216543,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216544,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216545,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1216546,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1216547,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1237177,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1237178,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1237180,Sheikh Zayed Stadium,Sluggish,Low,Low,High,Sluggish
+1237181,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254058,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254059,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254060,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254061,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254062,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254063,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254064,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254065,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254066,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254067,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254068,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254069,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254070,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254071,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254072,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254073,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254074,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254075,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254076,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1254077,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1254078,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1254079,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1254080,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1254081,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1254082,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1254083,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1254084,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1254085,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1254086,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1254087,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254088,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254089,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254090,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254091,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254092,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254093,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254094,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254095,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254096,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254097,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254098,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254099,"Zayed Cricket Stadium, Abu Dhabi",Batting-friendly,Medium,Medium,High,True bounce
+1254100,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254101,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254102,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254103,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254104,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254105,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254106,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254107,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254108,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254109,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254110,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254111,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254112,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254113,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254114,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1254115,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254116,Sharjah Cricket Stadium,Batting-friendly,Low,Low,Moderate,Low
+1254117,Dubai International Cricket Stadium,Balanced,Medium,Low,High,True bounce
+1304047,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304048,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304049,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304050,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304051,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304052,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304053,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304054,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304055,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304056,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304057,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304058,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304059,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304060,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304061,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304062,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304063,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304064,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304065,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304066,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304067,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304068,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304069,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304070,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304071,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304072,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304073,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304074,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304075,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304076,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304077,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304078,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304079,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304080,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304081,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304082,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304083,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304084,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304085,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304086,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304087,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304088,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304089,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304090,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304091,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304092,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304093,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304094,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304095,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304096,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304097,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304098,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304099,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304100,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304101,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304102,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304103,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304104,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304105,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304106,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304107,"Maharashtra Cricket Association Stadium, Pune",Balanced,Medium,Medium,Moderate,Consistent
+1304108,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304109,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304110,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304111,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304112,"Dr DY Patil Sports Academy, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304113,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304114,"Brabourne Stadium, Mumbai",Batting-friendly,Medium,Medium,Moderate,True bounce
+1304115,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1304116,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1312197,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1312198,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1312199,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1312200,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359475,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359476,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Balanced,Medium,Medium,Moderate,Consistent
+1359477,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359478,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359479,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359480,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359481,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359482,"Barsapara Cricket Stadium, Guwahati",Balanced,Medium,Medium,Moderate,Consistent
+1359483,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359484,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359485,"Barsapara Cricket Stadium, Guwahati",Balanced,Medium,Medium,Moderate,Consistent
+1359486,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359487,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359488,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359489,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359490,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359491,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359492,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Balanced,Medium,Medium,Moderate,Consistent
+1359493,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359494,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359495,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359496,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359497,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359498,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359499,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359500,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1359501,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Balanced,Medium,Medium,Moderate,Consistent
+1359502,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359503,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359504,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359505,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359506,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359507,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359508,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359509,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359510,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1359511,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1359512,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Balanced,Medium,Medium,Moderate,Consistent
+1359513,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359514,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359515,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359516,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359517,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359518,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359519,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359520,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Balanced,Medium,Medium,Moderate,Consistent
+1359521,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359522,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1359523,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359524,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359525,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359526,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1359527,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359528,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359529,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359530,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359531,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359532,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359533,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359534,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1359535,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1359536,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1359537,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1359538,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Balanced,Medium,Medium,Moderate,Consistent
+1359539,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1359540,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Balanced,Medium,Medium,Moderate,Consistent
+1359541,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1359542,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1359543,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1359544,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1370350,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1370351,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1370352,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1370353,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1422119,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1422120,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Balanced,Medium,Medium,Moderate,Consistent
+1422121,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1422122,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1422123,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1422124,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1422125,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1422126,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1422127,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1422128,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1422129,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1422130,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1422131,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Balanced,Medium,Medium,Moderate,Consistent
+1422132,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1422133,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1422134,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Balanced,Medium,Medium,Moderate,Consistent
+1422135,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1422136,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1422137,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1422138,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1422139,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426260,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426261,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Balanced,Medium,Medium,Moderate,Consistent
+1426262,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1426263,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1426264,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426265,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Balanced,Medium,Medium,Moderate,Consistent
+1426266,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426267,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1426268,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1426269,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426270,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1426271,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Balanced,Medium,Medium,Moderate,Consistent
+1426272,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426273,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1426274,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426275,"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Balanced,Medium,Medium,Moderate,Consistent
+1426276,"Sawai Mansingh Stadium, Jaipur",Balanced,Medium,Medium,Moderate,Consistent
+1426277,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426278,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1426279,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1426280,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426281,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1426282,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426283,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1426284,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426285,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426286,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426287,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426288,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1426289,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1426290,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1426291,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Balanced,Medium,Medium,Moderate,Consistent
+1426292,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Balanced,Medium,Medium,Moderate,Consistent
+1426293,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1426294,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1426295,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1426296,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Balanced,Medium,Medium,Moderate,Consistent
+1426297,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1426298,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1426299,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426300,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1426302,"Arun Jaitley Stadium, Delhi",Balanced,Medium,Medium,Moderate,Consistent
+1426303,"Barsapara Cricket Stadium, Guwahati",Balanced,Medium,Medium,Moderate,Consistent
+1426305,"Wankhede Stadium, Mumbai",Batting-friendly,Low,Low,High,True bounce
+1426306,"M Chinnaswamy Stadium, Bengaluru",Batting-friendly,Low,Low,High,True bounce
+1426307,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1426309,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1426310,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
+1426311,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1426312,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1473438,"Eden Gardens, Kolkata",Balanced,Medium,Medium,Moderate,Consistent
+1473439,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Balanced,Medium,Medium,Moderate,Consistent
+1473440,"MA Chidambaram Stadium, Chepauk, Chennai",Spin-friendly,Low,Low,Low,Low
+1473441,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Balanced,Medium,Medium,Moderate,Consistent
+1473442,"Narendra Modi Stadium, Ahmedabad",Batting-friendly,Low,Low,High,True bounce
