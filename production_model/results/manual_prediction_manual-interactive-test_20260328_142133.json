@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-03-28T14:21:33.050371+00:00",
+  "match_id": "manual-interactive-test",
+  "match_name": "Manual Test MI vs KKR",
+  "series_name": "Indian Premier League",
+  "match_start_utc": "2026-03-28T14:21:32.921784+00:00",
+  "team1": "Mumbai Indians",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Wankhede Stadium, Mumbai",
+  "toss_winner": "Mumbai Indians",
+  "toss_decision": "field",
+  "minutes_to_start": null,
+  "squad_checked_success": false,
+  "team1_win_probability": 0.5349,
+  "predicted_winner": "Mumbai Indians",
+  "confidence": 0.5349,
+  "match_started": false,
+  "match_ended": false,
+  "prediction_source": "manual"
+}

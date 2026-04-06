@@ -1,0 +1,4 @@
+{
+  "production_model": "../model/model.joblib",
+  "phase4_1_model": "../../phases/phase_4_1/artifacts/phase41_ipl_winner_best_pipeline.joblib"
+}

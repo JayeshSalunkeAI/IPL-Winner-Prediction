@@ -79,6 +79,12 @@ def normalize_toss_choice(choice: str) -> str:
     return "field"
 
 
+def normalize_player_key(name: str) -> str:
+    if not name:
+        return ""
+    return "".join(ch.lower() for ch in name if ch.isalnum())
+
+
 def http_get_json(url: str) -> Dict[str, Any]:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
@@ -266,6 +272,92 @@ class AutoPredictor:
         self.builder = HistoricalFeatureBuilder(base_dir / "data" / "training_data.csv")
         self.db_path = default_db_path(base_dir)
         init_db(self.db_path)
+        self.squad_players_by_team = self._load_local_squads(base_dir / "data" / "squads_2026.csv")
+
+    def _load_local_squads(self, squads_csv: Path) -> Dict[str, set]:
+        out: Dict[str, set] = {}
+        if not squads_csv.exists():
+            return out
+        try:
+            df = pd.read_csv(squads_csv)
+            if not {"team", "player"}.issubset(set(df.columns)):
+                return out
+            for _, row in df.iterrows():
+                t = self.builder.map_team(normalize_team_name(str(row["team"])))
+                p = normalize_player_key(str(row["player"]))
+                if not p:
+                    continue
+                out.setdefault(t, set()).add(p)
+        except Exception:
+            return {}
+        return out
+
+    def _role_scores(self, role_text: str) -> Tuple[float, float]:
+        role = (role_text or "").lower()
+        if "allround" in role:
+            return 0.9, 0.9
+        if "bowl" in role:
+            return 0.35, 1.05
+        if "wk" in role or "keeper" in role:
+            return 0.95, 0.25
+        if "bat" in role:
+            return 1.0, 0.25
+        return 0.7, 0.7
+
+    def _player_multiplier_from_squad(
+        self, team_name: str, squad_payload: Optional[List[Dict[str, Any]]]
+    ) -> Tuple[float, float, int]:
+        if not squad_payload:
+            return 1.0, 1.0, 0
+
+        target = self.builder.map_team(normalize_team_name(team_name))
+        target_norm = normalize_team_name(team_name).lower()
+
+        team_obj = None
+        for entry in squad_payload:
+            api_team = normalize_team_name(str(entry.get("teamName", "")))
+            if api_team == target or api_team.lower() == target_norm:
+                team_obj = entry
+                break
+
+        if team_obj is None:
+            return 1.0, 1.0, 0
+
+        players = team_obj.get("players") if isinstance(team_obj, dict) else []
+        if not isinstance(players, list) or not players:
+            return 1.0, 1.0, 0
+
+        # API often returns full squad pre-match. We cap at first 11 to approximate announced XI.
+        picked = players[:11]
+        local_set = self.squad_players_by_team.get(target, set())
+
+        bat_scores: List[float] = []
+        bowl_scores: List[float] = []
+        for p in picked:
+            role = str(p.get("role", ""))
+            name = str(p.get("name", ""))
+            bat_s, bowl_s = self._role_scores(role)
+
+            # Small confidence bump if this player exists in local squad file.
+            key = normalize_player_key(name)
+            if key and key in local_set:
+                bat_s += 0.03
+                bowl_s += 0.03
+
+            bat_scores.append(bat_s)
+            bowl_scores.append(bowl_s)
+
+        if not bat_scores or not bowl_scores:
+            return 1.0, 1.0, 0
+
+        # Convert average role score to safe multipliers (bounded to avoid model drift).
+        bat_avg = sum(bat_scores) / len(bat_scores)
+        bowl_avg = sum(bowl_scores) / len(bowl_scores)
+
+        bat_mult = min(1.12, max(0.88, bat_avg / 0.8))
+        bowl_mult = min(1.12, max(0.88, bowl_avg / 0.8))
+
+        return float(bat_mult), float(bowl_mult), len(picked)
 
     def select_match(
         self,
@@ -347,6 +439,7 @@ class AutoPredictor:
         deadline = time.time() + max(timeout_minutes, 1) * 60
         squad_checked = False
         squad_ok = False
+        squad_payload: Optional[List[Dict[str, Any]]] = None
         last_match = None
 
         while time.time() < deadline:
@@ -384,6 +477,8 @@ class AutoPredictor:
                 sq = self.api.match_squad(candidate.match_id)
                 squad_checked = True
                 squad_ok = sq.get("status") == "success" and isinstance(sq.get("data"), list)
+                if squad_ok:
+                    squad_payload = sq.get("data")
                 print(f"match_squad status={sq.get('status')} squad_ok={squad_ok}")
 
             if toss_ready and in_window:
@@ -391,6 +486,7 @@ class AutoPredictor:
                     m,
                     squad_ok=squad_ok,
                     mins_to_start=mins_to_start,
+                    squad_payload=squad_payload,
                 )
                 return result
 
@@ -398,12 +494,21 @@ class AutoPredictor:
 
         if last_match and last_match.get("tossWinner"):
             print("Timeout reached; generating best-effort prediction using latest toss data.")
-            return self.predict_from_match_payload(last_match, squad_ok=squad_ok, mins_to_start=None)
+            return self.predict_from_match_payload(
+                last_match,
+                squad_ok=squad_ok,
+                mins_to_start=None,
+                squad_payload=squad_payload,
+            )
 
         raise RuntimeError("Timed out waiting for toss/window. Trigger again closer to toss time.")
 
     def predict_from_match_payload(
-        self, m: Dict[str, Any], squad_ok: bool, mins_to_start: Optional[float]
+        self,
+        m: Dict[str, Any],
+        squad_ok: bool,
+        mins_to_start: Optional[float],
+        squad_payload: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         teams = m.get("teams") or ["", ""]
         if len(teams) < 2:
@@ -440,6 +545,24 @@ class AutoPredictor:
 
         t1p = self.builder.team_profile(team1)
         t2p = self.builder.team_profile(team2)
+
+        t1_bat_mult, t1_bowl_mult, t1_players_used = self._player_multiplier_from_squad(
+            team1, squad_payload if squad_ok else None
+        )
+        t2_bat_mult, t2_bowl_mult, t2_players_used = self._player_multiplier_from_squad(
+            team2, squad_payload if squad_ok else None
+        )
+
+        # Player-aware adjustment from API squad roles + local squad list.
+        t1p["bat_avg"] *= t1_bat_mult
+        t1p["bat_sr"] *= t1_bat_mult
+        t1p["bowl_eco"] /= t1_bowl_mult
+        t1p["bowl_sr"] /= t1_bowl_mult
+
+        t2p["bat_avg"] *= t2_bat_mult
+        t2p["bat_sr"] *= t2_bat_mult
+        t2p["bowl_eco"] /= t2_bowl_mult
+        t2p["bowl_sr"] /= t2_bowl_mult
 
         is_high_dew = 1 if (toss_decision == "field" and vp["venue_chase_winrate_prior"] >= 0.52) else 0
 
@@ -490,6 +613,13 @@ class AutoPredictor:
             "toss_decision": toss_decision,
             "minutes_to_start": mins_to_start,
             "squad_checked_success": squad_ok,
+            "players_api_used": bool(squad_ok and squad_payload),
+            "team1_players_used": t1_players_used,
+            "team2_players_used": t2_players_used,
+            "team1_bat_multiplier": round(t1_bat_mult, 4),
+            "team1_bowl_multiplier": round(t1_bowl_mult, 4),
+            "team2_bat_multiplier": round(t2_bat_mult, 4),
+            "team2_bowl_multiplier": round(t2_bowl_mult, 4),
             "team1_win_probability": round(team1_win_prob, 4),
             "predicted_winner": predicted_winner,
             "confidence": round(float(confidence), 4),

@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-03-30T13:51:12.791862+00:00",
+  "match_id": "d788e9f9-99bf-4650-a035-92a7e21b3d08",
+  "match_name": "Rajasthan Royals vs Chennai Super Kings, 3rd Match, Indian Premier League 2026",
+  "series_name": "Indian Premier League",
+  "match_start_utc": "2026-03-30T14:00:00",
+  "team1": "Rajasthan Royals",
+  "team2": "Chennai Super Kings",
+  "venue": "Barsapara Cricket Stadium, Guwahati",
+  "toss_winner": "Rajasthan Royals",
+  "toss_decision": "field",
+  "minutes_to_start": 8.7895539,
+  "squad_checked_success": false,
+  "team1_win_probability": 0.4081,
+  "predicted_winner": "Chennai Super Kings",
+  "confidence": 0.5919,
+  "match_started": false,
+  "match_ended": false,
+  "prediction_source": "auto"
+}

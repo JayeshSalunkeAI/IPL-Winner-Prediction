@@ -1,0 +1,11 @@
+model,matches,correct,accuracy_percent
+phase4_1,11,8,72.73
+phase1,11,7,63.64
+phase5_1,11,6,54.55
+phase6_1_xgb,11,6,54.55
+phase6_xgb,11,6,54.55
+phase2,11,5,45.45
+phase4,11,5,45.45
+phase6_catboost,11,5,45.45
+phase3,11,1,9.09
+phase5,11,1,9.09

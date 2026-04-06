@@ -1,0 +1,111 @@
+model,match_id,fixture,predicted_winner,actual_winner,correct,confidence
+phase1,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.5544359683990479
+phase2,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.15571647832022856
+phase3,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Mumbai Indians,Royal Challengers Bengaluru,False,1.0
+phase4,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.48893518583606765
+phase4_1,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.3920382857322693
+phase5,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Mumbai Indians,Royal Challengers Bengaluru,False,1.0
+phase5_1,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.4157665186777446
+phase6_xgb,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.7594123482704163
+phase6_catboost,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Sunrisers Hyderabad,Royal Challengers Bengaluru,False,0.5019174384918452
+phase6_1_xgb,149618,Royal Challengers Bengaluru vs Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.5815044641494751
+phase1,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.6501317620277405
+phase2,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.15398473298809123
+phase3,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,1.0
+phase4,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.42912913260064395
+phase4_1,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.3828897476196289
+phase5,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,1.0
+phase5_1,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.4107295025268417
+phase6_xgb,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.7867823839187622
+phase6_catboost,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.5026849083240434
+phase6_1_xgb,149629,Mumbai Indians vs Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,True,0.5635038018226624
+phase1,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.44575339555740356
+phase2,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.1652646459653649
+phase3,149640,Rajasthan Royals vs Chennai Super Kings,Mumbai Indians,Rajasthan Royals,False,1.0
+phase4,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.4633448954525426
+phase4_1,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.32339686155319214
+phase5,149640,Rajasthan Royals vs Chennai Super Kings,Mumbai Indians,Rajasthan Royals,False,1.0
+phase5_1,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.4129341837100417
+phase6_xgb,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.7447267174720764
+phase6_catboost,149640,Rajasthan Royals vs Chennai Super Kings,Chennai Super Kings,Rajasthan Royals,False,0.5002294201824053
+phase6_1_xgb,149640,Rajasthan Royals vs Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,True,0.5647872090339661
+phase1,149651,Punjab Kings vs Gujarat Titans,Punjab Kings,Punjab Kings,True,0.7351089715957642
+phase2,149651,Punjab Kings vs Gujarat Titans,Gujarat Titans,Punjab Kings,False,0.20942346270595963
+phase3,149651,Punjab Kings vs Gujarat Titans,Mumbai Indians,Punjab Kings,False,1.0
+phase4,149651,Punjab Kings vs Gujarat Titans,Gujarat Titans,Punjab Kings,False,0.3822715787118597
+phase4_1,149651,Punjab Kings vs Gujarat Titans,Punjab Kings,Punjab Kings,True,0.30753493309020996
+phase5,149651,Punjab Kings vs Gujarat Titans,Mumbai Indians,Punjab Kings,False,1.0
+phase5_1,149651,Punjab Kings vs Gujarat Titans,Gujarat Titans,Punjab Kings,False,0.27409059322254026
+phase6_xgb,149651,Punjab Kings vs Gujarat Titans,Punjab Kings,Punjab Kings,True,0.5297704339027405
+phase6_catboost,149651,Punjab Kings vs Gujarat Titans,Punjab Kings,Punjab Kings,True,0.5004395059553296
+phase6_1_xgb,149651,Punjab Kings vs Gujarat Titans,Punjab Kings,Punjab Kings,True,0.5625569820404053
+phase1,149662,Lucknow Super Giants vs Delhi Capitals,Delhi Capitals,Delhi Capitals,True,0.5374563932418823
+phase2,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.20373784842924553
+phase3,149662,Lucknow Super Giants vs Delhi Capitals,Mumbai Indians,Delhi Capitals,False,1.0
+phase4,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.5669841434356672
+phase4_1,149662,Lucknow Super Giants vs Delhi Capitals,Delhi Capitals,Delhi Capitals,True,0.20507784187793732
+phase5,149662,Lucknow Super Giants vs Delhi Capitals,Mumbai Indians,Delhi Capitals,False,1.0
+phase5_1,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.38257703716267405
+phase6_xgb,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.8841226696968079
+phase6_catboost,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.5195056232106647
+phase6_1_xgb,149662,Lucknow Super Giants vs Delhi Capitals,Lucknow Super Giants,Delhi Capitals,False,0.6770868897438049
+phase1,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.6457377076148987
+phase2,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.17701206538381026
+phase3,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,False,1.0
+phase4,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.5789387828043915
+phase4_1,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.43191325664520264
+phase5,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,False,1.0
+phase5_1,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.48098143708513347
+phase6_xgb,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.793191134929657
+phase6_catboost,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Sunrisers Hyderabad,Sunrisers Hyderabad,True,0.5002294201824053
+phase6_1_xgb,149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,False,0.6023396849632263
+phase1,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.5367838740348816
+phase2,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.175162476312015
+phase3,149684,Chennai Super Kings vs Punjab Kings,Mumbai Indians,Punjab Kings,False,1.0
+phase4,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.40044644897802156
+phase4_1,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.4194132089614868
+phase5,149684,Chennai Super Kings vs Punjab Kings,Mumbai Indians,Punjab Kings,False,1.0
+phase5_1,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.32280280359439834
+phase6_xgb,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.6723706722259521
+phase6_catboost,149684,Chennai Super Kings vs Punjab Kings,Punjab Kings,Punjab Kings,True,0.5010470220865519
+phase6_1_xgb,149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,Punjab Kings,False,0.5292488932609558
+phase1,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.53093022108078
+phase2,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.15817579547588534
+phase3,149695,Delhi Capitals vs Mumbai Indians,Mumbai Indians,Delhi Capitals,False,1.0
+phase4,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.4437018673695069
+phase4_1,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.31823861598968506
+phase5,149695,Delhi Capitals vs Mumbai Indians,Mumbai Indians,Delhi Capitals,False,1.0
+phase5_1,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.4120156938222473
+phase6_xgb,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.7581170797348022
+phase6_catboost,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.5026849083240434
+phase6_1_xgb,149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,Delhi Capitals,True,0.5412570834159851
+phase1,149699,Gujarat Titans vs Rajasthan Royals,Rajasthan Royals,Rajasthan Royals,True,0.622976541519165
+phase2,149699,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,False,0.20379033552624864
+phase3,149699,Gujarat Titans vs Rajasthan Royals,Mumbai Indians,Rajasthan Royals,False,1.0
+phase4,149699,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,False,0.447602993208596
+phase4_1,149699,Gujarat Titans vs Rajasthan Royals,Rajasthan Royals,Rajasthan Royals,True,0.26198771595954895
+phase5,149699,Gujarat Titans vs Rajasthan Royals,Mumbai Indians,Rajasthan Royals,False,1.0
+phase5_1,149699,Gujarat Titans vs Rajasthan Royals,Rajasthan Royals,Rajasthan Royals,True,0.2489049272238049
+phase6_xgb,149699,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,False,0.8303030133247375
+phase6_catboost,149699,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,False,0.5124891265410881
+phase6_1_xgb,149699,Gujarat Titans vs Rajasthan Royals,Gujarat Titans,Rajasthan Royals,False,0.5681630969047546
+phase1,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.7267211675643921
+phase2,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.16356722963911724
+phase3,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,False,1.0
+phase4,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.3366978270391639
+phase4_1,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.14626292884349823
+phase5,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,False,1.0
+phase5_1,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.31588275866194243
+phase6_xgb,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.8372293710708618
+phase6_catboost,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.5017271262033447
+phase6_1_xgb,149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,False,0.6119752526283264
+phase1,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Chennai Super Kings,Royal Challengers Bengaluru,False,0.4537180960178375
+phase2,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.1609548350894712
+phase3,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Mumbai Indians,Royal Challengers Bengaluru,False,1.0
+phase4,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.4736507678106429
+phase4_1,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.35153231024742126
+phase5,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Mumbai Indians,Royal Challengers Bengaluru,False,1.0
+phase5_1,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.4201049107350828
+phase6_xgb,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.7238038182258606
+phase6_catboost,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Chennai Super Kings,Royal Challengers Bengaluru,False,0.5019174384918452
+phase6_1_xgb,149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,True,0.5585509538650513

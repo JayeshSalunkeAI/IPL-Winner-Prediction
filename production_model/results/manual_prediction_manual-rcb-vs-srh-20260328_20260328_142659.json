@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-03-28T14:26:59.010021+00:00",
+  "match_id": "manual-rcb-vs-srh-20260328",
+  "match_name": "RCB vs SRH",
+  "series_name": "Indian Premier League",
+  "match_start_utc": "2026-03-28T14:26:58.966221+00:00",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "M Chinnaswamy Stadium, Bengaluru",
+  "toss_winner": "Royal Challengers Bengaluru",
+  "toss_decision": "field",
+  "minutes_to_start": null,
+  "squad_checked_success": false,
+  "team1_win_probability": 0.4186,
+  "predicted_winner": "Sunrisers Hyderabad",
+  "confidence": 0.5814,
+  "match_started": false,
+  "match_ended": false,
+  "prediction_source": "manual"
+}

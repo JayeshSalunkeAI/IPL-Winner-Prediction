@@ -15,3 +15,6 @@ PyYAML==6.0.3
 tqdm==4.67.3
 lightgbm==4.3.0
 catboost==1.2.7
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2

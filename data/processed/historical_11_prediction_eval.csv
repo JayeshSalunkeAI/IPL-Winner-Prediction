@@ -1,0 +1,12 @@
+match_id,fixture,predicted_winner,confidence,actual_winner,correct
+cb-149651,Punjab Kings vs Gujarat Titans,Punjab Kings,0.5372,Punjab Kings,True
+cb-149673,Kolkata Knight Riders vs Sunrisers Hyderabad,Kolkata Knight Riders,0.6392,Sunrisers Hyderabad,False
+cb-149684,Chennai Super Kings vs Punjab Kings,Chennai Super Kings,0.898,Punjab Kings,False
+cb-149695,Delhi Capitals vs Mumbai Indians,Delhi Capitals,0.7209,Delhi Capitals,True
+cb-149710,Sunrisers Hyderabad vs Lucknow Super Giants,Sunrisers Hyderabad,0.8091,Lucknow Super Giants,False
+cb-149721,Royal Challengers Bengaluru vs Chennai Super Kings,Royal Challengers Bengaluru,0.9297,Royal Challengers Bengaluru,True
+cb-149732,Kolkata Knight Riders vs Punjab Kings,Kolkata Knight Riders,0.7792,,False
+cb-149743,Rajasthan Royals vs Mumbai Indians,Rajasthan Royals,0.8325,,False
+cb-149746,Delhi Capitals vs Gujarat Titans,Delhi Capitals,0.7228,,False
+cb-149757,Kolkata Knight Riders vs Lucknow Super Giants,Kolkata Knight Riders,0.8025,,False
+cb-149768,Rajasthan Royals vs Royal Challengers Bengaluru,Rajasthan Royals,0.8317,,False
