@@ -85,9 +85,29 @@ def parse_scorecard(html: str) -> Dict[str, Optional[str]]:
     if date_m:
         out["match_date"] = clean_text(date_m.group(1))
 
-    venue_m = re.search(r"at ([A-Za-z0-9,'&.\- ]+), [A-Za-z ]+", text)
-    if venue_m:
-        out["venue"] = clean_text(venue_m.group(1))
+    # Prefer structured metadata venue (stable on Cricbuzz pages).
+    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        blob = script.get_text("", strip=True)
+        if not blob:
+            continue
+        name_match = re.search(r'"location"\s*:\s*\{[^{}]*"name"\s*:\s*"([^"]+)"', blob)
+        if name_match:
+            candidate = clean_text(name_match.group(1))
+            if 3 <= len(candidate) <= 80:
+                out["venue"] = candidate
+                break
+
+    # Fallback from visible text only if structured extraction is missing.
+    if not out["venue"]:
+        venue_label = re.search(r"Venue\s+([A-Za-z0-9,'&.\- ]{5,80}),\s*([A-Za-z .\-]{2,40})", text)
+        if venue_label:
+            out["venue"] = clean_text(f"{venue_label.group(1)}, {venue_label.group(2)}")
+
+    # Last fallback keeps strict length bounds to avoid menu/nav contamination.
+    if not out["venue"]:
+        venue_m = re.search(r"\bat\s+([A-Za-z0-9,'&.\- ]{5,80}),\s*([A-Za-z .\-]{2,40})\b", text)
+        if venue_m:
+            out["venue"] = clean_text(f"{venue_m.group(1)}, {venue_m.group(2)}")
 
     return out
 
