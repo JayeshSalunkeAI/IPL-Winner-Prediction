@@ -3,6 +3,10 @@
 This folder rebuilds Phase 4.1 with improved player performance features scraped
 from the IPL stats site for seasons 2020 to 2026.
 
+Current redesign target:
+- Train on 2021 to 2025 matches.
+- Test on 2026 matches completed till date.
+
 ## Pipeline
 
 1. Scrape season batting and bowling stats from `https://www.iplt20.com/stats/<year>` feeds.
@@ -28,9 +32,14 @@ python phases/phase_4_1_redefine/train_phase41r_extra_trees.py \
   --player-ratings phases/phase_4_1_redefine/data/player_performance_ratings_2020_2026.csv \
   --results-dir phases/phase_4_1_redefine/results \
   --artifacts-dir phases/phase_4_1_redefine/artifacts \
-  --years 2020 2021 2023 2024 2025 \
+  --train-years 2021 2022 2023 2024 2025 \
+  --test-year 2026 \
+  --eval-comparison-csv "production_model/Model Comparison/comparison_table.csv" \
   --drop-no-result
 ```
+
+Note: if `phase4_dataset.csv` does not yet include 2026 rows, the trainer uses
+completed 2026 matches from the comparison table as the holdout test set.
 
 ## Outputs
 
@@ -40,3 +49,4 @@ python phases/phase_4_1_redefine/train_phase41r_extra_trees.py \
 - `artifacts/phase41r_extratrees_pipeline.joblib`
 - `artifacts/phase41r_model_metadata.json`
 - `results/phase41r_metrics.json`
+- `results/phase41r_test_predictions.csv`

@@ -1,0 +1,19 @@
+actual_winner,predicted_winner,correct
+Royal Challengers Bengaluru,Royal Challengers Bengaluru,True
+Mumbai Indians,Mumbai Indians,True
+Rajasthan Royals,Rajasthan Royals,True
+Punjab Kings,Punjab Kings,True
+Delhi Capitals,Lucknow Super Giants,False
+Sunrisers Hyderabad,Kolkata Knight Riders,False
+Punjab Kings,Punjab Kings,True
+Delhi Capitals,Delhi Capitals,True
+Rajasthan Royals,Gujarat Titans,False
+Lucknow Super Giants,Lucknow Super Giants,True
+Royal Challengers Bengaluru,Royal Challengers Bengaluru,True
+Rajasthan Royals,Rajasthan Royals,True
+Gujarat Titans,Delhi Capitals,False
+Lucknow Super Giants,Kolkata Knight Riders,False
+Rajasthan Royals,Rajasthan Royals,True
+Punjab Kings,Sunrisers Hyderabad,False
+Gujarat Titans,Lucknow Super Giants,False
+Royal Challengers Bengaluru,Mumbai Indians,False

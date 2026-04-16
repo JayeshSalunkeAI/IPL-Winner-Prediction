@@ -13,7 +13,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score, classification_report, f1_score
-from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold, train_test_split
+from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
@@ -25,7 +25,13 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Train Phase 4.1 redefine (ExtraTrees focused)")
     p.add_argument("--input", default="phases/phase_4/results/phase4_dataset.csv")
     p.add_argument("--player-ratings", required=True)
-    p.add_argument("--years", nargs="+", type=int, default=[2020, 2021, 2023, 2024, 2025])
+    p.add_argument("--train-years", nargs="+", type=int, default=[2021, 2022, 2023, 2024, 2025])
+    p.add_argument("--test-year", type=int, default=2026)
+    p.add_argument(
+        "--eval-comparison-csv",
+        default="production_model/Model Comparison/comparison_table.csv",
+        help="Fallback 2026 evaluation source when --input has no rows for --test-year",
+    )
     p.add_argument("--results-dir", default="phases/phase_4_1_redefine/results")
     p.add_argument("--artifacts-dir", default="phases/phase_4_1_redefine/artifacts")
     p.add_argument("--drop-no-result", action="store_true")
@@ -94,6 +100,90 @@ def enrich_player_elo_features(df: pd.DataFrame, ratings_df: pd.DataFrame) -> pd
     return df
 
 
+def build_2026_eval_from_comparison(
+    csv_path: Path,
+    feature_columns: list[str],
+    test_year: int,
+) -> pd.DataFrame:
+    if not csv_path.exists():
+        return pd.DataFrame()
+
+    df = pd.read_csv(csv_path)
+    required = {"team1", "team2", "actual_winner"}
+    if not required.issubset(set(df.columns)):
+        return pd.DataFrame()
+
+    winners = df["actual_winner"].fillna("").astype(str).str.strip()
+    mask_done = winners != ""
+    if "match_name" in df.columns:
+        mask_year = df["match_name"].fillna("").astype(str).str.contains(str(test_year), case=False)
+    else:
+        mask_year = pd.Series([True] * len(df), index=df.index)
+
+    df_eval = df.loc[mask_done & mask_year].copy()
+    if df_eval.empty:
+        return pd.DataFrame()
+
+    neutral_defaults: dict[str, float] = {
+        "team1_form_winrate_5": 0.5,
+        "team2_form_winrate_5": 0.5,
+        "venue_chase_winrate_prior": 0.5,
+        "venue_score_prior": 170.0,
+        "h2h_team1_winrate_prior": 0.5,
+        "venue_team1_winrate_prior": 0.5,
+        "venue_team2_winrate_prior": 0.5,
+        "venue_avg_first_innings_runs_prior": 170.0,
+        "team1_recent_runs_for_5": 160.0,
+        "team2_recent_runs_for_5": 160.0,
+        "team1_recent_runs_against_5": 160.0,
+        "team2_recent_runs_against_5": 160.0,
+        "team1_recent_wkts_taken_5": 7.0,
+        "team2_recent_wkts_taken_5": 7.0,
+        "team1_recent_powerplay_rr_5": 8.0,
+        "team2_recent_powerplay_rr_5": 8.0,
+        "team1_recent_death_rr_5": 10.0,
+        "team2_recent_death_rr_5": 10.0,
+        "team1_player_elo_avg_prior": 1000.0,
+        "team2_player_elo_avg_prior": 1000.0,
+        "team1_player_elo_max_prior": 1150.0,
+        "team2_player_elo_max_prior": 1150.0,
+        "team1_player_elo_min_prior": 850.0,
+        "team2_player_elo_min_prior": 850.0,
+        "player_elo_gap_prior": 0.0,
+    }
+
+    rows: list[dict[str, Any]] = []
+    for _, r in df_eval.iterrows():
+        team1 = str(r.get("team1", "")).strip()
+        team2 = str(r.get("team2", "")).strip()
+        toss_winner = str(r.get("toss_winner", "")).strip() or team1
+        toss_decision = str(r.get("toss_decision", "field")).strip().lower() or "field"
+        if toss_decision not in {"bat", "field"}:
+            toss_decision = "field"
+
+        row: dict[str, Any] = {
+            "Team1": team1,
+            "Team2": team2,
+            "Toss_Winner": toss_winner,
+            "Toss_Decision": toss_decision,
+            "Match_Winner": str(r.get("actual_winner", "")).strip(),
+        }
+
+        for col, val in neutral_defaults.items():
+            row[col] = val
+
+        for i in range(1, 12):
+            row[f"Team1_Player_{i}"] = f"{team1}_Player_{i}" if team1 else f"Unknown_Team1_Player_{i}"
+            row[f"Team2_Player_{i}"] = f"{team2}_Player_{i}" if team2 else f"Unknown_Team2_Player_{i}"
+
+        # Keep only features expected by the trained pipeline + target column.
+        compact = {c: row.get(c, np.nan) for c in feature_columns}
+        compact["Match_Winner"] = row["Match_Winner"]
+        rows.append(compact)
+
+    return pd.DataFrame(rows)
+
+
 def main() -> None:
     args = parse_args()
     input_path = Path(args.input)
@@ -108,25 +198,50 @@ def main() -> None:
 
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date", "Match_Winner"]).copy()
-    df = df[df["Date"].dt.year.isin(set(args.years))].copy()
 
     if args.drop_no_result:
         df = df[df["Match_Winner"] != "Draw/No Result"].copy()
 
     df = enrich_player_elo_features(df, ratings_df)
 
-    drop_cols = ["Match_ID", "Date", "Teams", "Match_Winner"]
-    feature_columns = [c for c in df.columns if c not in drop_cols]
+    train_years = sorted(set(args.train_years))
+    train_df = df[df["Date"].dt.year.isin(set(train_years))].copy()
+    test_df = df[df["Date"].dt.year == int(args.test_year)].copy()
 
-    X = df[feature_columns].copy()
-    y_raw = df["Match_Winner"].astype(str).values
+    drop_cols = ["Match_ID", "Date", "Teams", "Match_Winner"]
+    feature_columns = [c for c in train_df.columns if c not in drop_cols]
+
+    if train_df.empty:
+        raise ValueError(f"No training rows found for years: {train_years}")
+
+    # If phase4 dataset has no 2026 rows, evaluate on completed 2026 matches from comparison table.
+    test_source = "phase4_dataset"
+    if test_df.empty:
+        test_df = build_2026_eval_from_comparison(Path(args.eval_comparison_csv), feature_columns, int(args.test_year))
+        test_source = "comparison_table_2026_completed"
+
+    if test_df.empty:
+        raise ValueError(
+            f"No test rows found for {args.test_year} in input dataset or fallback comparison table: {args.eval_comparison_csv}"
+        )
+
+    X_train = train_df[feature_columns].copy()
+    y_train_raw = train_df["Match_Winner"].astype(str)
+
+    X_test = test_df[feature_columns].copy()
+    y_test_raw = test_df["Match_Winner"].astype(str)
 
     label_encoder = LabelEncoder()
-    y = label_encoder.fit_transform(y_raw)
+    label_encoder.fit(y_train_raw.values)
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y
-    )
+    y_train = label_encoder.transform(y_train_raw.values)
+
+    known_mask = y_test_raw.isin(label_encoder.classes_)
+    X_test = X_test.loc[known_mask].reset_index(drop=True)
+    y_test_raw = y_test_raw.loc[known_mask].reset_index(drop=True)
+    if y_test_raw.empty:
+        raise ValueError("Test rows found, but none have winners present in training label space")
+    y_test = label_encoder.transform(y_test_raw.values)
 
     preprocessor, _, _ = build_preprocessor(X_train)
     pipe = Pipeline(
@@ -176,8 +291,12 @@ def main() -> None:
         "test_f1_weighted": float(f1_score(y_test, test_pred, average="weighted", zero_division=0)),
         "best_cv_accuracy": float(search.best_score_),
         "best_params": search.best_params_,
-        "training_years": args.years,
-        "rows_used": int(len(df)),
+        "training_years": train_years,
+        "test_year": int(args.test_year),
+        "test_source": test_source,
+        "rows_train": int(len(train_df)),
+        "rows_test": int(len(X_test)),
+        "rows_total_after_filters": int(len(df)),
     }
 
     report = classification_report(
@@ -203,12 +322,24 @@ def main() -> None:
                 "model": "extra_trees_gen",
                 "feature_count": len(feature_columns),
                 "feature_columns": feature_columns,
-                "training_years": args.years,
+                "training_years": train_years,
+                "test_year": int(args.test_year),
+                "test_source": test_source,
                 "metrics": metrics,
             },
             f,
             indent=2,
         )
+
+    test_pred_labels = label_encoder.inverse_transform(test_pred)
+    test_preds_df = pd.DataFrame(
+        {
+            "actual_winner": y_test_raw,
+            "predicted_winner": test_pred_labels,
+            "correct": y_test_raw.values == test_pred_labels,
+        }
+    )
+    test_preds_df.to_csv(results_dir / "phase41r_test_predictions.csv", index=False)
 
     with open(results_dir / "phase41r_metrics.json", "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)
